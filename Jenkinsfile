@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        input 'Test OK?'
         sh 'npm install'
       }
     }
